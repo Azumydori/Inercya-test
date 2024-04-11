@@ -1,0 +1,14 @@
+@use "../../../../styles/abstract/abstract" as *;
+
+.abbv-banner {
+    background-color: rgb(var(--abbv-primary));
+    color: rgb(var(--abbv-secondary));
+    padding: 44px 0;
+    border-top-left-radius: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: to-rem(64);
+}
+

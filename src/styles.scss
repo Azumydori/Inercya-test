@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@use "./styles/abstract/functions/functions" as *;
+@use "./styles/abstract/variables/variables" as *;
+@use "./styles/reset" as *;
+@use "./assets/fonts/fontImports" as *;
+
+body {
+    font-family:"Roboto", sans-serif;
+    margin: 0 to-rem($spacer-xxl);
+}

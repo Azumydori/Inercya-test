@@ -1,0 +1,10 @@
+@use "../../../../styles/abstract/abstract" as *;
+
+.abbvie-navbar {
+    background-color: rgb(var(--abbv-secondary));
+    padding: to-rem($spacer-xl) to-rem($spacer-xxl);
+}
+
+.abbvie-logo {
+    width: to-rem(182);
+}

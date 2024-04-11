@@ -1,0 +1,9 @@
+@use '../../../../styles/abstract/abstract' as *;
+
+.primary-button {
+    font-size: to-rem(24);
+    color: rgb(var(--abbv-primary));
+    background-color: rgb(var(--abbv-secondary));
+    border: 2px solid rgb(var(--abbv-primary));
+    padding: 16px 24px;
+}
