@@ -5,5 +5,16 @@
     color: rgb(var(--abbv-primary));
     background-color: rgb(var(--abbv-secondary));
     border: 2px solid rgb(var(--abbv-primary));
-    padding: 16px 24px;
+    padding: 24px 16px;
+    transition: 0.5s ease-in-out 3ms;
+    @media screen and (max-width: 850px) 
+{
+    font-size: 16px;
+    width: 100%;
+}
+}
+
+.primary-button:hover {
+    background-color: rgb(var(--abbv-primary));
+    color: rgb(var(--abbv-secondary));
 }

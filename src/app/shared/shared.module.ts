@@ -3,15 +3,14 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
-import { ButtonsBannerComponent } from './components/buttons-banner/buttons-banner.component';
-
+import { EmployeeCardComponent } from './components/employee-card/employee-card.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
     BannerComponent,
     ButtonsComponent,
-    ButtonsBannerComponent
+    EmployeeCardComponent
   ],
   imports: [
     CommonModule
@@ -19,7 +18,8 @@ import { ButtonsBannerComponent } from './components/buttons-banner/buttons-bann
   exports: [
     NavbarComponent,
     BannerComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    EmployeeCardComponent
   ]
 })
 export class SharedModule { }

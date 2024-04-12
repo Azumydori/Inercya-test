@@ -1,5 +1,41 @@
-.button-container {
+@use '../../../../styles/abstract/abstract' as *;
+
+.abbv-btn-cont {
     display: flex;
-    margin-top: 48px;
+    margin: 48px 32px;
     gap: 24px;
+
+
+    @media screen and (max-width: 850px) {
+        flex-direction: column;
+        align-items: center;
+        margin: 34px 18px;
+    }
+}
+
+app-buttons {
+    @media screen and (max-width: 850px) {
+        width: 100%;
+    }
+}
+
+.abbv-subtitle-cont {
+    margin: 0 32px 48px 32px;
+
+    .abbv-subtitle {
+        color: rgb(var(--abbv-primary));
+    }
+    @media screen and (max-width: 850px) {
+        margin-left:18px;
+    }
+}
+
+.abbv-card-cont {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (max-width: 850px) {
+        margin: 0 18px;
+    }
 }

@@ -5,10 +5,19 @@
     color: rgb(var(--abbv-secondary));
     padding: 44px 0;
     border-top-left-radius: 100px;
+    margin: 0 2rem;
+
+    @media screen and (max-width: 850px) {
+        border-radius: 0;
+        margin: 0;
+    }
 }
 
 h1 {
     text-align: center;
     font-size: to-rem(64);
-}
 
+    @media screen and (max-width: 850px) {
+        font-size: 32px;
+    }
+}

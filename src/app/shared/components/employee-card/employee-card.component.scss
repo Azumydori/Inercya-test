@@ -1,0 +1,68 @@
+@use '../../../../styles/abstract/abstract' as *;
+
+.abbv-container {
+    margin: 0;
+}
+
+.abbv-card-body {
+    border: 2px solid rgb(var(--abbv-neutral-10));
+    max-width: 322px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 16px;
+    gap: 16px;
+
+    .abbv-comment {
+        width: 100%;
+    }
+}
+
+.abbv-employee-desc{
+    line-height: 16px;
+    color: rgb(var(--abbv-primary));
+}
+
+.primary-button {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid rgb(var(--abbv-primary));
+    background-color: rgb(var(--abbv-secondary));
+    transition: 0.5s ease-in-out 3ms;
+}
+
+.primary-button:hover {
+    background-color: rgb(var(--abbv-primary));
+    color: rgb(var(--abbv-secondary));
+}
+
+.abbv-icon #svg-path.clicked{
+    stroke: rgb(var(--abbv-primary));
+    stroke-opacity: 1;
+}
+
+.abbv-crm-cont{
+    background-color: rgb(var(--abbv-primary));
+    padding: 8px;
+    width: 141px;
+    display: flex;
+    justify-content: center;
+    color: rgb(var(--abbv-secondary));
+}
+
+.abbv-img-section {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    margin-left: 36px;
+}
+
+input {
+    background-color: rgb(var(--abbv-secondary));
+    border: 0;
+    border-bottom: 2px solid rgb(var(--abbv-primary));
+}
+ .abbv-label {
+    color: rgb(var(--abbv-primary));
+    font-weight: bold;
+ }
