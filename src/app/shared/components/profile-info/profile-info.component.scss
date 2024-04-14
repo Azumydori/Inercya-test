@@ -1,0 +1,43 @@
+@use '../../../../styles/abstract/abstract' as *;
+
+.abbv-big-profile-cont {
+    display: flex;
+    gap: 18px;
+    color: rgb(var(--abbv-primary));
+}
+
+.abbv-title-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.abbv-name-pos-cont {
+display:flex;
+justify-content: space-between;
+}
+
+.abbv-profile-story{
+    margin-top: 34px;
+}
+
+.abbv-icon-cont {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 8px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+img {
+    width: 332px;
+}
+
+.abbv-icon #svg-path.clicked {
+    stroke: rgb(var(--abbv-primary));
+    stroke-opacity: 1;
+}
