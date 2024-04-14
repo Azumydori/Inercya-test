@@ -3,9 +3,9 @@
 .abbv-banner {
     background-color: rgb(var(--abbv-primary));
     color: rgb(var(--abbv-secondary));
-    padding: 44px 0;
-    border-top-left-radius: 100px;
-    margin: 0 2rem;
+    padding: to-rem($spacer-4xl) 0;
+    border-top-left-radius: to-rem($size-key * 25);
+    margin: 0 to-rem($spacer-xxl);
 
     @media screen and (max-width: 850px) {
         border-radius: 0;
@@ -15,9 +15,9 @@
 
 h1 {
     text-align: center;
-    font-size: to-rem(64);
+    font-size: $font-size-hd-l;
 
     @media screen and (max-width: 850px) {
-        font-size: 32px;
+        font-size: $font-size-hd-s;
     }
 }

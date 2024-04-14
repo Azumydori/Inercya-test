@@ -1,7 +1,7 @@
 @use "../size-key/size-key" as *;
 @use "../../functions/to-rem/to-rem" as *;
 
-$font-size-hd-falco: to-rem($size-key * 24); // 96
+$font-size-hd-xl: to-rem($size-key * 24); // 96
 $font-size-hd-l: to-rem($size-key * 16); // 64
 $font-size-hd-m-l: to-rem($size-key * 12); // 48
 $font-size-hd-m: to-rem($size-key * 10); // 40
@@ -12,6 +12,7 @@ $font-size-l: to-rem($size-key * 5); // 20
 $font-size-m: to-rem($size-key * 4.5); // 18
 $font-size-s: to-rem($size-key * 4); // 16
 $font-size-xs: to-rem($size-key * 3.5); // 14
+$font-size-xxs: to-rem($size-key * 3); // 12
 
 $font-weight-normal: 400;
 $font-weight-bold: 700;

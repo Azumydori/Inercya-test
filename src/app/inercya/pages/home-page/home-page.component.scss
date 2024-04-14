@@ -2,14 +2,14 @@
 
 .abbv-btn-cont {
     display: flex;
-    margin: 48px 32px;
-    gap: 24px;
+    margin: to-rem($spacer-4xl) to-rem($spacer-xxl);
+    gap: to-rem($spacer-xl);
 
 
     @media screen and (max-width: 850px) {
         flex-direction: column;
         align-items: center;
-        margin: 34px 18px;
+        margin: to-rem($spacer-xxl) to-rem($spacer-md2);
     }
 }
 
@@ -20,22 +20,25 @@ app-buttons {
 }
 
 .abbv-subtitle-cont {
-    margin: 0 32px 48px 32px;
+    margin: 0 to-rem($spacer-xxl) to-rem($spacer-4xl) to-rem($spacer-xxl);
 
     .abbv-subtitle {
         color: rgb(var(--abbv-primary));
     }
+
     @media screen and (max-width: 850px) {
-        margin-left:18px;
+        margin-left: to-rem($spacer-md2);
     }
 }
 
 .abbv-card-cont {
     display: flex;
-    gap: 32px;
-    justify-content: center;
+    gap: to-rem($spacer-xxl);
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 to-rem($spacer-xl) to-rem($spacer-xl) to-rem($spacer-xl);
+
     @media screen and (max-width: 850px) {
-        margin: 0 18px;
+        margin: 0 to-rem($spacer-md2);
     }
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'shared-navbar',
@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  constructor(private router: Router) { }
+
+  ngOnInit(): void {
+  }
+
+  redirectToHomePage() {
+    this.router.navigate(['/home-page']);
+  }
 
 
 }

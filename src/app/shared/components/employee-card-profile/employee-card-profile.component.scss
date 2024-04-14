@@ -6,26 +6,29 @@
 
 .abbv-card-body {
     border: 2px solid rgb(var(--abbv-neutral-10));
-    max-width: 322px;
+    max-width: to-rem($size-key * 80.5);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6px 16px;
-    gap: 16px;
+    padding: to-rem($spacer-xxs2) to-rem($spacer-md);
+    gap: to-rem($spacer-md);
 
     .abbv-comment {
         width: 100%;
     }
+    @media screen and (max-width: 850px) {
+        max-width: to-rem($size-key * 76);
+    }
 }
 
 .abbv-employee-desc{
-    line-height: 16px;
+    line-height: $line-height-s;
     color: rgb(var(--abbv-primary));
 }
 
 .primary-button {
     width: 100%;
-    padding: 8px;
+    padding: to-rem($spacer-xs);
     border: 2px solid rgb(var(--abbv-primary));
     background-color: rgb(var(--abbv-secondary));
     transition: 0.5s ease-in-out 3ms;
@@ -44,8 +47,8 @@
 
 .abbv-crm-cont{
     background-color: rgb(var(--abbv-primary));
-    padding: 8px;
-    width: 141px;
+    padding: to-rem($spacer-xs);
+    width: to-rem($size-key * 35.25);
     display: flex;
     justify-content: center;
     color: rgb(var(--abbv-secondary));
@@ -54,8 +57,8 @@
 .abbv-img-section {
     display: flex;
     align-items: flex-end;
-    gap: 12px;
-    margin-left: 36px;
+    gap: to-rem($spacer-sm);
+    margin-left: to-rem($spacer-xxl);
 }
 
 input {

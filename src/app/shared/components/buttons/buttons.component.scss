@@ -5,12 +5,12 @@
     color: rgb(var(--abbv-primary));
     background-color: rgb(var(--abbv-secondary));
     border: 2px solid rgb(var(--abbv-primary));
-    padding: 24px 16px;
+    padding: to-rem($spacer-xl) to-rem($spacer-md);
     transition: 0.5s ease-in-out 3ms;
     cursor: pointer;
     @media screen and (max-width: 850px) 
 {
-    font-size: 16px;
+    font-size: $font-size-s;
     width: 100%;
 }
 }
@@ -19,3 +19,21 @@
     background-color: rgb(var(--abbv-primary));
     color: rgb(var(--abbv-secondary));
 }
+
+
+.primary-button-small {
+    font-size: to-rem(16);
+    color: rgb(var(--abbv-primary));
+    background-color: rgb(var(--abbv-secondary));
+    border: 2px solid rgb(var(--abbv-primary));
+    padding: to-rem($spacer-md) to-rem($spacer-xs);
+    transition: 0.5s ease-in-out 3ms;
+    cursor: pointer;
+    width: 100%;
+}
+
+.primary-button-small:hover {
+    background-color: rgb(var(--abbv-primary));
+    color: rgb(var(--abbv-secondary));
+}
+

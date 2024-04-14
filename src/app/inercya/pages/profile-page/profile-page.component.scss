@@ -1,10 +1,56 @@
+@use '../../../../styles/abstract/abstract'as *;
 
 .abbv-card-cont {
     display: flex;
     flex-wrap: wrap;
-    gap:18px;
+    justify-content: space-between;
+    @media screen and (max-width: 850px) {
+        gap:to-rem($spacer-md2);
+    }
+}
+
+.abbv-container-profile{
+    @media screen and (max-width: 850px) {
+        margin: 0 to-rem($spacer-md2);
+    }
 }
 
 main {
     display:flex;
+    gap: to-rem($spacer-xxl);
+    margin-left: to-rem($spacer-xxl);
+    margin-bottom: to-rem($spacer-xxl);
+
+    @media screen and (max-width: 850px) {
+        flex-direction: column;
+        margin-bottom: to-rem($spacer-md2);
+        margin-left: to-rem($spacer-xs);
+    }
+}
+
+.abbv-h2-title {
+    color: rgb(var(--abbv-primary));
+    margin-bottom: to-rem($spacer-lg);
+}
+
+.abbv-comment-gen {
+    width: 100%;
+}
+.abbv-right-cont {
+    display: flex;
+    flex: 0 0 auto;
+    border-left: 2px solid rgb(var(--abbv-primary));
+    max-width: to-rem($size-key * 92.5);
+}
+
+@media screen and (max-width:850px) {
+    .abbv-right-cont {
+        border: none;
+    }
+}
+.abbv-main-profile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: to-rem($spacer-4xl);
 }

@@ -2,39 +2,82 @@
 
 .abbv-big-profile-cont {
     display: flex;
-    gap: 18px;
+    gap: to-rem($spacer-md2);
     color: rgb(var(--abbv-primary));
+
+    @media screen and (max-width: 850px) {
+        flex-direction: column-reverse;
+    }
 }
 
 .abbv-title-cont {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: to-rem($spacer-xl);
     width: 100%;
+
+    @media screen and (max-width: 850px) {
+        gap: to-rem($spacer-sm);
+        align-items: center;
+    }
 }
 
 .abbv-name-pos-cont {
-display:flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 850px) {
+        align-items: center;
+        flex-direction: column;
+        gap: to-rem($spacer-sm);
+    }
 }
 
-.abbv-profile-story{
-    margin-top: 34px;
+.abbv-profile-story {
+    margin-top: to-rem($spacer-xxl);
+    line-height: 1.5;
+    @media screen and (max-width: 850px) {
+        margin: to-rem($spacer-4xl) to-rem($spacer-xs) 0 0;
+    }
 }
 
 .abbv-icon-cont {
     display: flex;
     align-items: center;
-    position: relative;
-    gap: 8px;
+    position: absolute;
+    gap: to-rem($spacer-xs);
+    top: 42%;
+    @media screen and (max-width: 850px){
+        top: 76%;
+        left: to-rem($spacer-xs);
+    }
 }
 
 h1 {
-    font-size: 32px;
+    font-size: $font-size-hd-s;
+
+    @media screen and (max-width: 850px) {
+        font-size: $font-size-l;
+    }
+}
+
+.abbv-profile-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.abbv-story {
+    text-align: justify;
 }
 
 img {
-    width: 332px;
+    width: to-rem($size-key * 83);
+    border-top-left-radius: 30px;
+
+    @media screen and (max-width: 850px) {
+        width: to-rem($size-key * 76);
+        margin-right: to-rem($spacer-xs);
+    }
 }
 
 .abbv-icon #svg-path.clicked {
